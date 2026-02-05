@@ -2,7 +2,7 @@ async function addTask(task, datetime) {
   const tg = window.Telegram.WebApp;
   const user = tg.initDataUnsafe?.user;
   
-  await fetch("https://ton-n8n-instance.com/webhook/todo-add", {
+  await fetch("https://n8n-34hh.onrender.com/webhook-test/todo-add", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({
