@@ -1,3 +1,5 @@
+console.log("script.js loaded", window.Telegram);
+
 const tg = window.Telegram.WebApp;
 tg.ready(); // indique à Telegram que l’UI est prête
 
@@ -14,7 +16,7 @@ tg.MainButton.setText("Envoyer la demande");
 tg.MainButton.show();
 
 // URL de ton webhook n8n (à remplir APRES création du workflow)
-const N8N_WEBHOOK_URL = "https://n8n-34hh.onrender.com/webhook-test/todo-add";
+const N8N_WEBHOOK_URL = "https://n8n-34hh.onrender.com/webhook/todo-add";
 
 tg.MainButton.onClick(async () => {
   const name = nameInput.value.trim();
